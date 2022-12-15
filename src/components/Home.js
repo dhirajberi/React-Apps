@@ -2,7 +2,15 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <div className="container">
+      <h2>React Apps</h2>
+      <ul>
+        <li>Text Utils</li>
+        <li>Color Change</li>
+      </ul>
+    </div>
+    </>
   )
 }
 

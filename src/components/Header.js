@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const Header = ({Name, darkMode, toggleMode}) => {
+const Header = ({darkMode, toggleMode}) => {
 
   // const [myStyle, setMyStyle] = useState({color: 'white', backgroundColor: 'black'})
   // const [btnText, setBtnText] = useState("Dark Mode")
@@ -20,7 +20,7 @@ const Header = ({Name, darkMode, toggleMode}) => {
   return (
     <>
     <div className="container">
-      Welcome {Name} | <Link to="/React-Apps">Home</Link> | <Link to="/text-utils">Text Utils</Link> | <Link to="/about">About</Link> | <Link to="/color-change">Color Change</Link>
+      <Link to="/react-apps">Home</Link> | <Link to="/about">About</Link> | <Link to="/text-utils">Text Utils</Link> | <Link to="/color-change">Color Change</Link>
       <div className="form-check form-switch">
         <input className="form-check-input" onClick={toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
         <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{darkMode} Dark Mode</label>

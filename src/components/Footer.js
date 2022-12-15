@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = ({Year}) => {
+const Footer = () => {
   return (
     <div className="container">
       Created by Dhiraj.

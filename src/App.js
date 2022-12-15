@@ -35,23 +35,16 @@ const App = () => {
 
   return (
     <>
-    {/* Passing props  */}
-
     <BrowserRouter>
-      <Header Name="Dhiraj" darkMode={darkMode} toggleMode={toggleMode}/>
+      <Header darkMode={darkMode} toggleMode={toggleMode}/>
       <Routes> 
         <Route path="/React-Apps" element={<Home />}/>
         <Route path="/text-utils" element={<TextForm />}/>
         <Route path="/about" element={<About />} />
         <Route path="/color-change" element={<ColorChange />} />
       </Routes>
-      <Footer Year="2022"/>
+      <Footer/>
     </BrowserRouter>
-      
-    {/* <TextForm />
-    <About /> */}
-
-    
     </>
   )
 }
